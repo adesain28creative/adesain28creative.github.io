@@ -254,6 +254,49 @@ p {
     animation-duration: 3s;
 }
 
+.image-list-box {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.image-desain-box {
+    width: 20%;
+    position: relative;
+    left: 20px;
+    margin: 1.5rem;
+    animation-name: belajar;
+    animation-duration: 3s;
+}
+
+.image-desain-box img {
+    width: 100%;
+    border-radius: 20px;
+    animation-name: belajar;
+    animation-duration: 3s;
+    animation-name: nyobak;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse
+}
+
+.image-desain-box p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+}
+
+
 @media(max-width: 1000px){
     .image-desain{
         display: block;
@@ -610,6 +653,19 @@ h {
         text-align: center;
     }
 
+    .image-desain-box {
+        width: 44%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 20px;
+        text-align: center;
+    }
+
     .kartu-owner {
         width: 40%;
     }
@@ -679,6 +735,19 @@ h {
         text-align: center;
     }
 
+    .image-desain-box {
+        width: 40%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 40px;
+        text-align: center;
+    }
+
     .image-desain h1{
         font-size: 30px;
     }
@@ -709,6 +778,18 @@ h {
     }
 
     .image-desain p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .image-desain-box {
+        width: 40%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+    .image-desain-box p {
         font-size: 20px;
         text-align: center;
     }
@@ -747,6 +828,19 @@ h {
         font-size: 20px;
         text-align: center;
     }
+
+    .image-desain-box {
+        width: 39%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 532px) {
@@ -764,6 +858,7 @@ h {
     .image-desain img {
         width: 100%;
     }
+
     .kartu-owner {
         width: 38%;
     }
@@ -772,9 +867,17 @@ h {
         width: 100%;
     }
 
-    .image-desain p {
+    .image-desain-box p {
         font-size: 20px;
         text-align: center;
+    }
+
+    .image-desain-box {
+        width: 38%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
     }
 }
 
@@ -869,6 +972,22 @@ h {
         right: 30px;
     }
 
+    .image-desain-box {
+        width: 100%;
+    }
+
+    .image-desain-box img {
+        width: 90%;
+    }
+
+    .image-desain-box p {
+        font-size: 24px;
+        text-align: left;
+        padding: 30px;
+        position: relative;
+        right: 30px;
+    }
+
     .image-desain h1 {
         color: gray;
         font-size: 20px;
@@ -955,6 +1074,23 @@ h {
         position: relative;
         right: 35px;
     }
+
+    .image-desain-box {
+        width: 80%;
+        left: 12px;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 21px;
+        text-align: left;
+        padding: 30px;
+        position: relative;
+        right: 35px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1013,6 +1149,23 @@ h {
         position: relative;
         right: 35px;
     }
+
+    .image-desain-box {
+        width: 85%;
+        left: 0px;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 21px;
+        text-align: left;
+        padding: 30px;
+        position: relative;
+        right: 35px;
+    }
 }
 
 
@@ -1036,6 +1189,19 @@ h {
         font-size: 20px;
         text-align: center;
     }
+
+    .image-desain-box {
+        width: 31%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 250px) {
@@ -1055,6 +1221,19 @@ h {
     }
 
     .image-desain p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .image-desain-box {
+        width: 29%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
         font-size: 20px;
         text-align: center;
     }
@@ -1083,6 +1262,22 @@ h {
         position: relative;
         right: 30px;
     }
+
+    .image-desain-box {
+        width: 85%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 15px;
+        text-align: left;
+        padding: 25px;
+        position: relative;
+        right: 30px;
+    }
 }
 
 @media screen and (max-width: 250px) {
@@ -1105,6 +1300,19 @@ h {
         font-size: 20px;
         text-align: center;
     }
+
+    .image-desain-box {
+        width: 29%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 266px) {
@@ -1124,6 +1332,19 @@ h {
     }
 
     .image-desain p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .image-desain-box {
+        width: 28%;
+    }
+
+    .image-desain-box img {
+        width: 100%;
+    }
+
+    .image-desain-box p {
         font-size: 15px;
         text-align: center;
     }

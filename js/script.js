@@ -21,6 +21,17 @@ window.addEventListener('scroll',()=>{
 });
 
 window.addEventListener('scroll',()=>{
+    let content = document.querySelector('.image-list-box');
+    let contentposition = content.getBoundingClientRect().top;
+    let screenposition = window.innerHeight /1.7;
+    if(contentposition < screenposition){
+        content.classList.add('active')
+    }else{
+        content.classList.remove('active')
+    }
+});
+
+window.addEventListener('scroll',()=>{
     let content = document.querySelector('.owner-list');
     let contentposition = content.getBoundingClientRect().top;
     let screenposition = window.innerHeight /1.7;
